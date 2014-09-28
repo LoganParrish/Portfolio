@@ -1,0 +1,53 @@
+﻿@model Portfolio.Models.Contact
+@{
+    ViewBag.Title = "Contact me!";
+}
+
+<h2>Contact Form</h2>
+<form action="@Url.Action("Index", "Contact")" method="post">
+    <div class="textBoxes">
+        First Name
+    <div class="firstNameBox">
+        @*Create label, then text box, then validation for each property you want to display*@
+        
+        @Html.TextBoxFor(x => x.firstName)
+        @Html.ValidationMessageFor(x => x.firstName)
+    </div>
+
+        Last Name
+    <div class="lastNameBox">
+        
+        @Html.TextBoxFor(x => x.lastName)
+        @Html.ValidationMessageFor(x => x.lastName)
+    </div>
+        <br />
+        Phone Number
+    <div class="phoneBox">
+
+       
+        @Html.TextBoxFor(x => x.phoneNum)
+        @Html.ValidationMessageFor(x => x.phoneNum)
+
+    </div>
+        eMail
+        <div class="emailBox">
+        
+        @Html.TextBoxFor(x => x.email)
+        @Html.ValidationMessageFor(x => x.email)
+    </div>
+        <br />
+        Message
+    <div class="commentBox">
+        
+        @Html.TextAreaFor(x => x.comment)
+        @Html.ValidationMessageFor(x => x.comment)
+    </div>
+        <br />
+        </div>
+    <div class="hitMe">
+    <input type="submit" value="HIT ME WITH YOUR BEST SHOT" />
+        </div>
+</form>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

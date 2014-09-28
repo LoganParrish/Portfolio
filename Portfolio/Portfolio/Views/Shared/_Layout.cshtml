@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header>
+        <h1 style="text-align:center;">
+            Logan Parrish
+        </h1>
+    </header>
+    <nav>
+        
+        <a href="@Url.Action("Index", "Home")"><div class="homeTab">Home</div></a>
+            
+        
+         <a href="@Url.Action("Index", "About")"><div class="aboutTab">About</div></a>
+            
+        
+         <a href="@Url.Action("Index", "Work")"><div class="workTab">Work</div></a>
+            
+           
+         <a href="@Url.Action("Index", "Contact")"> <div class="contactTab">Contact</div></a>
+               
+                
+    </nav>
+    
+    
+    @RenderBody()
+   
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+    <footer>
+        Copyright 2014 Logan Parrish <div class="footerLinks"> <nav><a href="@Url.Action("Index", "Home")">Home </a>
+        &nbsp;|&nbsp;
+         <a href="@Url.Action("Index", "About")">About </a>
+        &nbsp;|&nbsp;
+         <a href="@Url.Action("Index", "Work")">Work </a>
+        &nbsp;|&nbsp;
+         <a href="@Url.Action("Index", "Contact")">Contact </a>
+        &nbsp;</nav></div>
+    </footer>
+</body>
+</html>
