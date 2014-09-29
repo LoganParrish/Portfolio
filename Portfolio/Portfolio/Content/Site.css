@@ -40,6 +40,12 @@ div.HomeBottom{
     text-align:center;
     width:450px;
     background-color:#459145;
+    height:50px;
+    overflow:hidden;
+    transition: height 0.5s ease-out;
+}
+div.HomeBottom:hover{
+    height:200px;
 }
 div.homeTab{
     border:double;
@@ -151,7 +157,6 @@ div.workImage4{
     margin-right:3px;
 }
 div.textBoxes{
-    width:1525px;
     text-align:center;
 }
 div.firstNameBox{
@@ -177,6 +182,8 @@ div.commentBox{
 
 div.frontContainer{
     text-align:center;
+    height: auto;
+    width: auto;
 }
 div.WorkPage{
     display:inline;
@@ -261,7 +268,7 @@ textarea {
 
 .input-validation-error {
     border: 1px solid #f00;
-    background-color: #fee;
+    background-color: #f00;
 }
 
 .validation-summary-errors {
