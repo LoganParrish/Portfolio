@@ -2,22 +2,12 @@
     background-color: #033C03;
     font-size: .85em;
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
-    color: #B8F0B8;
+    color: #000;
 
     
 }
 header{
-    border:double;
-    border-color:#2B772B;
-    border-top-right-radius:50px;
-    border-bottom-left-radius:5px;
-    border-bottom-right-radius:5px;
-    margin: 0 0 0 42.3%;
-    padding-left:30px;
-    padding-right:30px;
-    text-align:center;
-    display:inline-block;
-    background-color:#459145;
+    
 }
 footer, nav, section {
     display: block;
@@ -30,131 +20,62 @@ div.footerLinks{
     text-align:right;
 }
 
-div.HomeBottom{
-    border:double;
-    border-color:#2B772B;
-    border-top-right-radius:50px;
-    border-bottom-left-radius:10px;
-    border-bottom-right-radius:10px;
-    display:inline-block;
-    text-align:center;
-    width:450px;
-    background-color:#459145;
-    height:50px;
-    overflow:hidden;
-    transition: height 0.5s ease-out;
+div.HomeBottom {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background: linear-gradient(white, black);
+    overflow: hidden;
+    display: inline-block;
+    transition: width 1s ease-out, height 1s ease-out;
 }
 div.HomeBottom:hover{
-    height:200px;
+    transform:rotate(360deg);
+    width: 300px;
+    height: 300px;
 }
 div.homeTab{
-    border:double;
-    border-color:#2B772B;
-    border-bottom-left-radius:10px;
-    text-align:center;
-    display:inline-block;
-    width:50px;
-    color:#5ECD5E;
-    background-color:#459145;
-    transition: background-color 0.5s ease-out;
-    transition: color 0.5s ease-out;
-    transition: padding-right 1s;
+    
     
     
 }
 div.homeTab:hover{
-     padding-right:100px;
-     background-color: #5ECD5E;
-     color:#459145;
+     
      
 }
 div.aboutTab{
-    border:double;
-    border-color:#2B772B;
-    border-bottom-left-radius:10px;
-    text-align:center;
-    display:inline-block;
-    background-color:#459145;
-    width:50px;
-    color:#5ECD5E;
-    transition: background-color 0.5s ease-out;
-    transition: color 0.5s ease-out;
-    transition: padding-right 1s;
+    
 }
 div.aboutTab:hover{
-     padding-right:100px;
-     background-color: #5ECD5E;
-     color:#459145;
+     
 }
 div.workTab{
-    border:double;
-    border-color:#2B772B;
-    border-bottom-left-radius:10px;
-    text-align:center;
-    display:inline-block;
-    background-color:#459145;
-    width:50px;
-    color:#5ECD5E;
-    transition: background-color 0.5s ease-out;
-    transition: color 0.5s ease-out;
-    transition: padding-right 1s;
+    
 }
 div.workTab:hover{
-     padding-right:100px;
-     background-color: #5ECD5E;
-     color:#459145;
+     
 }
 div.contactTab{
-    border:double;
-    border-color:#2B772B;
-    border-bottom-left-radius:10px;
-    text-align:center;
-    display:inline-block;
-    background-color:#459145;
-    width:50px;
-    color:#5ECD5E;
-    transition: background-color 0.5s ease-out;
-    transition: color 0.5s ease-out;
-    transition: padding-right 1s;
+   
 }
 div.contactTab:hover{
-     padding-right:100px;
-     background-color: #5ECD5E;
-     color:#459145;
+     
 }
 div.workImageHolder{
-    display: block;
-    text-align: center;
+    
 }
 div.workImage1{
-    padding:10px;
-    border:double;
-    border-color:#2B772B;
-    background-color:#459145;
-    display:inline-block;
+    
 }
 div.workImage2{
-    padding:10px;
-    border:double;
-    border-color:#2B772B;
-    background-color:#459145;
-    display:inline-block;
+    
 }
 
 div.workImage3{
-    padding:10px;
-    border:double;
-    border-color:#2B772B;
-    background-color:#459145;
-    display:inline-block;
+    
 }
 div.workImage4{
-    padding:10px;
-    border:double;
-    border-color:#2B772B;
-    background-color:#459145;
-    display:inline-block;
-    margin-right:3px;
+    
 }
 div.textBoxes{
     text-align:center;
